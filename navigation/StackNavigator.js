@@ -24,7 +24,12 @@ const config = {
 
 export default function StackNavigator() {
   return (
-    <HomeStack.Navigator>
+    <HomeStack.Navigator
+      screenOptions={{
+        headerTintColor: "white",
+        headerStyle: { backgroundColor: "#1B2431" },
+      }}
+    >
       <HomeStack.Screen
         name="Accueil"
         component={Home}
@@ -38,7 +43,7 @@ export default function StackNavigator() {
               onPress={() => {}}
               style={{ width: "150%", marginLeft: 10 }}
             >
-              <Ionicons name="settings-sharp" size={35} />
+              <Ionicons name="settings-sharp" color="white" size={35} />
             </TouchableOpacity>
           ),
         }}
