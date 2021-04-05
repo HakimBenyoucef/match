@@ -35,7 +35,7 @@ export default function TabNavigator() {
           options={{
             tabBarLabel: "Accueil",
             tabBarIcon: ({ color }) => (
-              <Ionicons name="ios-folder" color={color} size={26} />
+              <Ionicons name="home-sharp" color={color} size={26} />
             ),
           }}
         />
