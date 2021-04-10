@@ -3,6 +3,8 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { TouchableOpacity } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import Home from "../components/Home";
+import { useNavigation } from "@react-navigation/native";
+import Login from "../components/connexion/Login";
 
 const HomeStack = createStackNavigator();
 HomeStack.navigationOptions = {
@@ -23,6 +25,7 @@ const config = {
 };
 
 export default function StackNavigator() {
+  const navigation = useNavigation();
   return (
     <HomeStack.Navigator
       screenOptions={{
@@ -38,14 +41,26 @@ export default function StackNavigator() {
             open: config,
             close: config,
           },
-          headerLeft: () => (
+          headerRight: () => (
             <TouchableOpacity
-              onPress={() => {}}
-              style={{ width: "150%", marginLeft: 10 }}
+              onPress={() => {
+                navigation.navigate("Login");
+              }}
+              style={{ marginRight: 10 }}
             >
-              <Ionicons name="settings-sharp" color="white" size={35} />
+              <Ionicons name="person-circle-sharp" color="white" size={35} />
             </TouchableOpacity>
           ),
+        }}
+      />
+      <HomeStack.Screen
+        name="Login"
+        component={Login}
+        options={{
+          transitionSpec: {
+            open: config,
+            close: config,
+          },
         }}
       />
     </HomeStack.Navigator>

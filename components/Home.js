@@ -36,7 +36,9 @@ export default function Home() {
                 color: "#1F0954",
                 fontSize: 18,
                 textAlign: "center",
-                fontWeight: "900",
+                fontWeight: "bold",
+                fontStyle: "italic",
+                textTransform: "uppercase"
               }}
             >
               Trouver un adversaire
@@ -61,7 +63,9 @@ export default function Home() {
                 color: "#1F0954",
                 fontSize: 18,
                 textAlign: "center",
-                fontWeight: "900",
+                fontWeight: "bold",
+                fontStyle: "italic",
+                textTransform: "uppercase"
               }}
             >
               Chercher sur la carte
@@ -88,7 +92,9 @@ export default function Home() {
               color: "#1F0954",
               fontSize: 18,
               textAlign: "center",
-              fontWeight: "900",
+              fontWeight: "bold",
+              fontStyle: "italic",
+              textTransform: "uppercase"
             }}
           >
             Mon équipe
@@ -113,7 +119,9 @@ export default function Home() {
                 color: "#1F0954",
                 fontSize: 18,
                 textAlign: "center",
-                fontWeight: "900",
+                fontWeight: "bold",
+                fontStyle: "italic",
+                textTransform: "uppercase"
               }}
             >
               Mon profil
@@ -137,7 +145,9 @@ export default function Home() {
                 color: "#1F0954",
                 fontSize: 18,
                 textAlign: "center",
-                fontWeight: "900",
+                fontWeight: "bold",
+                fontStyle: "italic",
+                textTransform: "uppercase"
               }}
             >
               Stade
