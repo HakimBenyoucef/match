@@ -1,32 +1,23 @@
 {
+  "name": "Match",
+  "displayName": "Match",
   "expo": {
-    "name": "match",
-    "slug": "match",
+    "name": "Match",
+    "slug": "Match",
+    "icon": "./images/logo_fennec.jpg",
+    "description": "Trouver un adversaire pour votre prochain match de foot",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "sdkVersion": "40.0.0",
+    "platforms": ["ios", "android", "web"],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.efennecs.match",
+      "buildNumber": "1.0.0"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "package": "com.efennecs.match",
+      "versionCode": 1,
+      "permissions": []
     }
   }
 }
