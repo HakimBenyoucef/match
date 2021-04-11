@@ -2,14 +2,19 @@
   "name": "Match",
   "displayName": "Match",
   "expo": {
-    "name": "Match",
-    "slug": "Match",
+    "name": "match",
+    "slug": "match",
     "icon": "./images/logo_fennec.jpg",
     "description": "Trouver un adversaire pour votre prochain match de foot",
     "version": "1.0.0",
-    "sdkVersion": "40.0.0",
-    "platforms": ["ios", "android", "web"],
-    "assetBundlePatterns": ["**/*"],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "bundleIdentifier": "com.efennecs.match",
       "buildNumber": "1.0.0"
