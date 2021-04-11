@@ -1,62 +1,61 @@
-import React, { useState } from "react";
+import React, {useState} from 'react';
 import {
   KeyboardAvoidingView,
   View,
   TextInput,
   ActivityIndicator,
   Platform,
-} from "react-native";
-import Button from "../../common/Button";
+} from 'react-native';
+import Button from '../../common/Button';
 
 export default function Login() {
   const login = function () {};
   const [loading, setLoading] = useState(false);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   return (
     <KeyboardAvoidingView
-      behavior={Platform.OS == "ios" ? "padding" : "height"}
+      behavior={Platform.OS == 'ios' ? 'padding' : 'height'}
       style={{
         flex: 1,
-        alignItems: "center",
-        justifyContent: "space-between",
-      }}
-    >
-      <View style={{ marginTop: 100, alignItems: "center", width: "100%" }}>
+        alignItems: 'center',
+        justifyContent: 'space-between',
+      }}>
+      <View style={{marginTop: 100, alignItems: 'center', width: '100%'}}>
         <TextInput
-          placeholder={"Email"}
+          placeholder={'Email'}
           autoCapitalize="none"
           autoCorrect={false}
-          onChangeText={(text) => (email = text)}
+          onChangeText={text => (email = text)}
           style={{
-            backgroundColor: "#FFF",
+            backgroundColor: '#FFF',
             marginTop: 40,
-            width: "90%",
+            width: '90%',
             height: 40,
-            borderColor: "grey",
+            borderColor: 'grey',
             borderWidth: 1,
             borderRadius: 5,
           }}
         />
         <TextInput
-          placeholder={"Mot de passe"}
+          placeholder={'Mot de passe'}
           secureTextEntry={true}
-          onChangeText={(text) => (password = text)}
+          onChangeText={text => (password = text)}
           style={{
-            backgroundColor: "#FFF",
+            backgroundColor: '#FFF',
             marginTop: 40,
-            width: "90%",
+            width: '90%',
             height: 40,
-            borderColor: "grey",
+            borderColor: 'grey',
             borderWidth: 1,
             borderRadius: 5,
           }}
         />
 
         <Button
-          bgColor={"black"}
-          textColor={"white"}
-          text={"Connexion"}
+          bgColor={'black'}
+          textColor={'white'}
+          text={'Connexion'}
           action={login}
         />
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   ImageBackground,
   ScrollView,
@@ -6,150 +6,133 @@ import {
   Text,
   TouchableOpacity,
   View,
-} from "react-native";
-import { Ionicons } from "@expo/vector-icons";
+} from 'react-native';
 
-const image = "../images/home_bg.jpg";
+const image = '../images/home_bg.jpg';
 export default function Home() {
   return (
     <View style={styles.container}>
       <ImageBackground
-        source={require("../images/home_bg_2.jpg")}
-        style={styles.image}
-      >
-        <View style={{ flexDirection: "row", padding: 5, height: "30%" }}>
+        source={require('../images/home_bg_2.jpg')}
+        style={styles.image}>
+        <View style={{flexDirection: 'row', padding: 5, height: '30%'}}>
           <TouchableOpacity
             style={{
               flex: 1,
-              backgroundColor: "#FFF",
+              backgroundColor: '#FFF',
               margin: 5,
-              borderColor: "white",
+              borderColor: 'white',
               borderWidth: 1,
-            }}
-          >
+            }}>
             <ImageBackground
-              source={require("../images/find-player.jpg")}
-              style={styles.image}
-            ></ImageBackground>
+              source={require('../images/find-player.jpg')}
+              style={styles.image}></ImageBackground>
             <Text
               style={{
-                color: "#1F0954",
+                color: '#1F0954',
                 fontSize: 18,
-                textAlign: "center",
-                fontWeight: "bold",
-                fontStyle: "italic",
-                textTransform: "uppercase"
-              }}
-            >
+                textAlign: 'center',
+                fontWeight: 'bold',
+                fontStyle: 'italic',
+                textTransform: 'uppercase',
+              }}>
               Trouver un adversaire
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{
               flex: 1,
-              backgroundColor: "#FFF",
+              backgroundColor: '#FFF',
               margin: 5,
-              borderColor: "white",
+              borderColor: 'white',
               borderWidth: 1,
-            }}
-          >
+            }}>
             <ImageBackground
-              source={require("../images/find-map.jpg")}
-              style={styles.image}
-            ></ImageBackground>
+              source={require('../images/find-map.jpg')}
+              style={styles.image}></ImageBackground>
 
             <Text
               style={{
-                color: "#1F0954",
+                color: '#1F0954',
                 fontSize: 18,
-                textAlign: "center",
-                fontWeight: "bold",
-                fontStyle: "italic",
-                textTransform: "uppercase"
-              }}
-            >
+                textAlign: 'center',
+                fontWeight: 'bold',
+                fontStyle: 'italic',
+                textTransform: 'uppercase',
+              }}>
               Chercher sur la carte
             </Text>
           </TouchableOpacity>
         </View>
         <TouchableOpacity
           style={{
-            height: "30%",
-            backgroundColor: "#FFF",
+            height: '30%',
+            backgroundColor: '#FFF',
             margin: 10,
             marginTop: 0,
             marginBottom: 0,
-            borderColor: "white",
+            borderColor: 'white',
             borderWidth: 1,
-          }}
-        >
+          }}>
           <ImageBackground
-            source={require("../images/team.jpg")}
-            style={styles.image}
-          ></ImageBackground>
+            source={require('../images/team.jpg')}
+            style={styles.image}></ImageBackground>
           <Text
             style={{
-              color: "#1F0954",
+              color: '#1F0954',
               fontSize: 18,
-              textAlign: "center",
-              fontWeight: "bold",
-              fontStyle: "italic",
-              textTransform: "uppercase"
-            }}
-          >
+              textAlign: 'center',
+              fontWeight: 'bold',
+              fontStyle: 'italic',
+              textTransform: 'uppercase',
+            }}>
             Mon équipe
           </Text>
         </TouchableOpacity>
-        <View style={{ flexDirection: "row", padding: 5, height: "30%" }}>
+        <View style={{flexDirection: 'row', padding: 5, height: '30%'}}>
           <TouchableOpacity
             style={{
               flex: 1,
-              backgroundColor: "#FFF",
+              backgroundColor: '#FFF',
               margin: 5,
-              borderColor: "white",
+              borderColor: 'white',
               borderWidth: 1,
-            }}
-          >
+            }}>
             <ImageBackground
-              source={require("../images/profile.jpg")}
-              style={styles.image}
-            ></ImageBackground>
+              source={require('../images/profile.jpg')}
+              style={styles.image}></ImageBackground>
             <Text
               style={{
-                color: "#1F0954",
+                color: '#1F0954',
                 fontSize: 18,
-                textAlign: "center",
-                fontWeight: "bold",
-                fontStyle: "italic",
-                textTransform: "uppercase"
-              }}
-            >
+                textAlign: 'center',
+                fontWeight: 'bold',
+                fontStyle: 'italic',
+                textTransform: 'uppercase',
+              }}>
               Mon profil
             </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={{
               flex: 1,
-              backgroundColor: "#FFF",
+              backgroundColor: '#FFF',
               margin: 5,
-              borderColor: "white",
+              borderColor: 'white',
               borderWidth: 1,
-            }}
-          >
+            }}>
             <ImageBackground
-              source={require("../images/stadium_2.jpg")}
-              style={styles.image}
-            ></ImageBackground>
+              source={require('../images/stadium_2.jpg')}
+              style={styles.image}></ImageBackground>
             <Text
               style={{
-                color: "#1F0954",
+                color: '#1F0954',
                 fontSize: 18,
-                textAlign: "center",
-                fontWeight: "bold",
-                fontStyle: "italic",
-                textTransform: "uppercase"
-              }}
-            >
+                textAlign: 'center',
+                fontWeight: 'bold',
+                fontStyle: 'italic',
+                textTransform: 'uppercase',
+              }}>
               Stade
             </Text>
           </TouchableOpacity>

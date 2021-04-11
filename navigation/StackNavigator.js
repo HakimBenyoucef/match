@@ -1,19 +1,19 @@
-import React from "react";
-import { createStackNavigator } from "@react-navigation/stack";
-import { TouchableOpacity } from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import Home from "../components/Home";
-import { useNavigation } from "@react-navigation/native";
-import Login from "../components/connexion/Login";
+import React from 'react';
+import {createStackNavigator} from '@react-navigation/stack';
+import {TouchableOpacity} from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
+import Home from '../components/Home';
+import {useNavigation} from '@react-navigation/native';
+import Login from '../components/connexion/Login';
 
 const HomeStack = createStackNavigator();
 HomeStack.navigationOptions = {
-  headerForceInset: { top: "never", bottom: "never" },
+  headerForceInset: {top: 'never', bottom: 'never'},
   header: null,
 };
 
 const config = {
-  animation: "spring",
+  animation: 'spring',
   config: {
     stiffness: 1000,
     damping: 500,
@@ -29,10 +29,9 @@ export default function StackNavigator() {
   return (
     <HomeStack.Navigator
       screenOptions={{
-        headerTintColor: "white",
-        headerStyle: { backgroundColor: "#1B2431" },
-      }}
-    >
+        headerTintColor: 'white',
+        headerStyle: {backgroundColor: '#1B2431'},
+      }}>
       <HomeStack.Screen
         name="Accueil"
         component={Home}
@@ -44,11 +43,10 @@ export default function StackNavigator() {
           headerRight: () => (
             <TouchableOpacity
               onPress={() => {
-                navigation.navigate("Login");
+                navigation.navigate('Login');
               }}
-              style={{ marginRight: 10 }}
-            >
-              <Ionicons name="person-circle-sharp" color="white" size={35} />
+              style={{marginRight: 10}}>
+              <Icon name="person-circle-sharp" color="white" size={35} />
             </TouchableOpacity>
           ),
         }}

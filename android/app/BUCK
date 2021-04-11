@@ -35,12 +35,12 @@ android_library(
 
 android_build_config(
     name = "build_config",
-    package = "com.efennecs.match",
+    package = "com.match",
 )
 
 android_resource(
     name = "res",
-    package = "com.efennecs.match",
+    package = "com.match",
     res = "src/main/res",
 )
 
