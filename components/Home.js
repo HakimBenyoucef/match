@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {
   ImageBackground,
@@ -26,7 +27,8 @@ export default function Home() {
             }}>
             <ImageBackground
               source={require('../images/find-player.jpg')}
-              style={styles.image}></ImageBackground>
+              style={styles.image}
+            />
             <Text
               style={{
                 color: '#1F0954',
@@ -49,7 +51,8 @@ export default function Home() {
             }}>
             <ImageBackground
               source={require('../images/find-map.jpg')}
-              style={styles.image}></ImageBackground>
+              style={styles.image}
+            />
 
             <Text
               style={{
@@ -76,7 +79,8 @@ export default function Home() {
           }}>
           <ImageBackground
             source={require('../images/team.jpg')}
-            style={styles.image}></ImageBackground>
+            style={styles.image}
+          />
           <Text
             style={{
               color: '#1F0954',
@@ -100,7 +104,8 @@ export default function Home() {
             }}>
             <ImageBackground
               source={require('../images/profile.jpg')}
-              style={styles.image}></ImageBackground>
+              style={styles.image}
+            />
             <Text
               style={{
                 color: '#1F0954',
@@ -123,7 +128,8 @@ export default function Home() {
             }}>
             <ImageBackground
               source={require('../images/stadium_2.jpg')}
-              style={styles.image}></ImageBackground>
+              style={styles.image}
+            />
             <Text
               style={{
                 color: '#1F0954',
