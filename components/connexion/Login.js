@@ -12,8 +12,8 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  TouchableOpacity,
 } from 'react-native';
-import Button from '../../common/Button';
 import {
   GoogleSignin,
   GoogleSigninButton,
@@ -35,6 +35,7 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [loggedIn, setloggedIn] = useState(false);
   const [userInfo, setuserInfo] = useState([]);
+  const [currentUser, setUser] = useState({});
 
   const _signIn = async () => {
     try {
@@ -46,6 +47,7 @@ export default function Login() {
         idToken,
         accessToken,
       );
+      getCurrentUser();
       await auth().signInWithCredential(credential);
     } catch (error) {
       if (error.code === statusCodes.SIGN_IN_CANCELLED) {
@@ -59,6 +61,8 @@ export default function Login() {
         // play services not available or outdated
       } else {
         // some other error happened
+        console.log('Error');
+        console.log('Error', error);
       }
     }
   };
@@ -83,6 +87,13 @@ export default function Login() {
     }
   };
 
+  const getCurrentUser = async () => {
+    alert('waw');
+    const user = await GoogleSignin.getCurrentUser();
+    setUser(user);
+    console.log(user);
+  };
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -90,8 +101,6 @@ export default function Login() {
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          <Header />
-
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
               <GoogleSigninButton
@@ -103,8 +112,11 @@ export default function Login() {
             </View>
             <View style={styles.buttonContainer}>
               {!loggedIn && <Text>You are currently logged out</Text>}
+              {currentUser && <Text>test</Text>}
               {loggedIn && (
-                <Button onPress={signOut} title="LogOut" color="red" />
+                <TouchableOpacity onPress={signOut}>
+                  <Text>LogOut</Text>
+                </TouchableOpacity>
               )}
             </View>
           </View>
