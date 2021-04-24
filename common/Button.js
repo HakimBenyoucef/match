@@ -15,7 +15,7 @@ export default function Button({bgColor, textColor, text, action}) {
           borderColor: '#A2A2A2',
           borderWidth: 1,
           borderRadius: 5,
-          backgroundColor: bgColor,
+          backgroundColor: bgColor ? bgColor : '#0088CE',
           alignItems: 'center',
           justifyContent: 'center',
           marginTop: 20,
@@ -24,7 +24,7 @@ export default function Button({bgColor, textColor, text, action}) {
           style={{
             textAlign: 'center',
             fontSize: 20,
-            color: textColor,
+            color: textColor ? textColor : '#FFF',
           }}>
           {text}
         </Text>
